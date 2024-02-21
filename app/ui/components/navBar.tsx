@@ -8,19 +8,15 @@ const montserrat = Montserrat({ weight: ['400', '700'], subsets: ["latin"] })
 const links = [
     {
         id: 1,
-        link: "Trips",
+        link: "Locations",
     },
     {
         id: 2,
-        link: "Membership",
+        link: "Experiences",
     },
     {
         id: 3,
         link: "Contact Us",
-    },
-    {
-        id: 4,
-        link: "About",
     },
 ];
 
@@ -54,9 +50,9 @@ export function NavBar() {
                 <button className="relative group" onClick={handleClick}>
                     <div className={`relative flex overflow-hidden items-center justify-center   w-[50px] h-[50px] transform transition-all bg-transparent  duration-200`}>
                         <div className="flex flex-col justify-between w-[20px] h-[20px] transform transition duration-300 origin-center overflow-hidden">
-                            <div className={`${scroll?'bg-slate-700':'bg-white'} h-[2px] w-7 transform transition rounded-lg duration-300 origin-left ${isClicked && 'group-focus:rotate-[42deg]'}`}></div>
-                            <div className={`${scroll?'bg-slate-700':'bg-white'} h-[2px] w-1/2 rounded-lg transform transition duration-300 ${isClicked && 'group-focus:-translate-x-10'}`}></div>
-                            <div className={`${scroll?'bg-slate-700':'bg-white'} h-[2px] w-7 transform rounded-lg transition duration-300 origin-left ${isClicked && 'group-focus:-rotate-[42deg]'}`}></div>
+                            <div className={`${scroll ? 'bg-slate-700' : 'bg-white'} h-[2px] w-7 transform transition rounded-lg duration-300 origin-left ${isClicked && 'group-focus:rotate-[42deg]'}`}></div>
+                            <div className={`${scroll ? 'bg-slate-700' : 'bg-white'} h-[2px] w-1/2 rounded-lg transform transition duration-300 ${isClicked && 'group-focus:-translate-x-10'}`}></div>
+                            <div className={`${scroll ? 'bg-slate-700' : 'bg-white'} h-[2px] w-7 transform rounded-lg transition duration-300 origin-left ${isClicked && 'group-focus:-rotate-[42deg]'}`}></div>
                         </div>
                     </div>
                 </button>

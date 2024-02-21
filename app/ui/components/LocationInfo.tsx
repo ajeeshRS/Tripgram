@@ -1,8 +1,8 @@
-import { Montserrat, Oswald } from "next/font/google"
+import { Oswald, Playfair_Display } from "next/font/google"
 import Image from "next/image"
 
-const montserrat = Montserrat({ weight: ['400', '700'], subsets: ["latin"] })
-const oswald = Oswald({ weight: ['400', '500', '700'], subsets: ['latin'] })
+const oswald = Oswald({ weight: ['400', '700'], subsets: ["latin"] })
+const playFair = Playfair_Display({ weight: ['400', '500', '700'], subsets: ['latin'] })
 const locationDetails = [{
     place: 'Munnar',
     imgUrl: '/images/munnar.jpg',
@@ -32,10 +32,10 @@ const locationDetails = [{
 
 export default function LocationInfo() {
     return (
-        <div className="bg-white w-full min-h-screen flex flex-col">
-            <div className="px-14 py-16">
-                <h2 className={`${montserrat.className} text-slate-700 font-semibold text-2xl py-2`}>Our Locations</h2>
-                <p className="text-slate-500 text-lg">Browse destination for your next holiday plan.</p>
+        <div className="bg-white w-full min-h-screen flex flex-col pt-4" id="Locations">
+            <div className="w-full px-10 md:px-32 py-16">
+                <h2 className={`${playFair.className} text-slate-700 font-normal text-3xl md:text-4xl py-2`}>Our Locations</h2>
+                <p className="text-slate-500 text-md">Browse destination for your next holiday plan.</p>
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-4 justify-items-center">
                 {
