@@ -1,7 +1,6 @@
 'use client'
 import { Playfair_Display } from "next/font/google"
 
-import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 
 import Image from "next/image";
@@ -49,7 +48,7 @@ export default function Experience() {
 
                 {images.map((image, index) => (
                     <div key={index} className="h-32 flex flex-col items-center">
-                        <img src={image.src} width={300} height={200} alt={image.alt} className="max-w-full h-32 rounded-lg object-cover" />
+                        <Image src={image.src} width={300} height={200} alt={image.alt} className="max-w-full h-32 rounded-lg object-cover" />
                         <p className="mt-2 text-gray-700 font-bold">{image.name}</p>
                     </div>
                 ))}

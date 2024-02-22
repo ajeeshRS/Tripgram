@@ -21,7 +21,6 @@ const links = [
 ];
 
 export function NavBar() {
-
     const [isClicked, setIsClicked] = useState(false);
 
     const handleClick = () => {
@@ -47,7 +46,7 @@ export function NavBar() {
         <nav className={`w-full fixed h-20 z-[1] flex flex-row justify-around items-center md:justify-around transition duration-500 ease-in-out ${scroll ? 'bg-white shadow-md' : 'bg-transparent'}`}>
             {/* hamburger button */}
             <div className="md:hidden block">
-                <button className="relative group" onClick={handleClick}>
+                <button name="hamburger" className="relative group " onClick={handleClick}>
                     <div className={`relative flex overflow-hidden items-center justify-center   w-[50px] h-[50px] transform transition-all bg-transparent  duration-200`}>
                         <div className="flex flex-col justify-between w-[20px] h-[20px] transform transition duration-300 origin-center overflow-hidden">
                             <div className={`${scroll ? 'bg-slate-700' : 'bg-white'} h-[2px] w-7 transform transition rounded-lg duration-300 origin-left ${isClicked && 'group-focus:rotate-[42deg]'}`}></div>
@@ -72,7 +71,7 @@ export function NavBar() {
                     </ul>
 
                 </div>
-                <button type="button" className=" text-white bg-green-400 hover:bg-green-600 transition ease-in-out  font-medium rounded-full text-sm md:text-md px-3  md:px-5 py-2.5 sm:font-xs ">Reserve Now</button>
+                <button name="reserve-button" type="button" className=" text-white bg-green-400 hover:bg-green-600 transition ease-in-out  font-medium rounded-full text-sm md:text-md px-3  md:px-5 py-2.5 sm:font-xs ">Reserve Now</button>
 
             </div>
             {isClicked && (

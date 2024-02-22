@@ -9,7 +9,7 @@ export default function Footer() {
             <div className="flex flex-col md:flex-row gap-4 justify-between items-center">
                 <div className="flex flex-col md:w-1/3 text-center md:text-start mt-5">
                     <h2 className={`text-black ${montserrat.className} font-bold text-2xl `}>Tripgram</h2>
-                    <p className="text-gray-500 ">Tripgram is an outdoor recreational center which celebrates nature and it's inexplicable beauty.</p>
+                    <p className="text-gray-500 ">Tripgram is an outdoor recreational center which celebrates nature and it&apos;s inexplicable beauty.</p>
                 </div>
                 <div className="md:border-l md:border-gray-300 md:h-32"></div>
                 <div className="hidden  md:flex w-full flex-row justify-around md:flex-col md:w-1/3 md:pl-6">
