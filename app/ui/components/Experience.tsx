@@ -1,7 +1,6 @@
 'use client'
 import { Playfair_Display } from "next/font/google"
 
-import 'swiper/css';
 
 import Image from "next/image";
 const playFair = Playfair_Display({ weight: ['400', '500', '700'], subsets: ['latin'] })
