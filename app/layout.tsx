@@ -5,7 +5,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Tripgram",
-  description: "Tripgram clone developed by ajeesh",
+  description: "Tripgram developed by ajeesh",
 };
 
 export default function RootLayout({
