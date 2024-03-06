@@ -56,7 +56,7 @@ export function NavBar() {
                     </div>
                 </button>
             </div>
-            <h2 className={`${scroll ? 'text-black' : 'text-white'} ${montserrat.className} font-bold text-2xl `}>Tripgram</h2>
+            <h2  className={`${scroll ? 'text-black' : 'text-white'} ${montserrat.className} font-bold text-2xl `}><Link href={'/'}>Tripgram</Link> </h2>
             <div className="w-[30%] md:w-1/2  flex flex-row justify-between items-center">
                 <div className="w-3/4 hidden md:block">
 
@@ -64,7 +64,7 @@ export function NavBar() {
                         {
                             links.map(({ link, id }) => (
                                 <li key={id} className={`${scroll ? 'text-gray-500 hover:text-black' : 'text-gray-200 hover:text-white  '} text-md`}>
-                                    <Link href={link}>{link}</Link>
+                                    <Link href={`#${link}`}>{link}</Link>
                                 </li>
                             ))
                         }
@@ -79,7 +79,7 @@ export function NavBar() {
                 <div className="md:hidden fixed inset-y-0 z-10  flex flex-col  text-center bg-white w-[100%] max-w-lg  px-4 py-6 space-y-4  mt-20 transition ease-in-out">
                     {links.map(({ link, id }) => (
                         <li key={id} className="py-2 w-full list-none text-slate-500 text-lg hover:text-black">
-                            <Link href={link}>{link}</Link>
+                            <Link href={`#${link}`} onClick={()=> setIsClicked(false)}>{link}</Link>
                         </li>
                     ))}
                 </div>

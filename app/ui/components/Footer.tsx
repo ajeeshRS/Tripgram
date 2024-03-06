@@ -1,11 +1,12 @@
 import { Montserrat } from "next/font/google"
 import Image from "next/image"
+import Link from "next/link"
 
 const montserrat = Montserrat({ weight: ['400', '700'], subsets: ["latin"] })
 
 export default function Footer() {
     return (
-        <div className="container mx-auto px-4 py-12 md:px-0" >
+        <div className="container mx-auto px-4 py-12 md:px-0" id="Contact Us" >
             <div className="flex flex-col md:flex-row gap-4 justify-between items-center">
                 <div className="flex flex-col md:w-1/3 text-center md:text-start mt-5">
                     <h2 className={`text-black ${montserrat.className} font-bold text-2xl `}>Tripgram</h2>
@@ -14,9 +15,15 @@ export default function Footer() {
                 <div className="md:border-l md:border-gray-300 md:h-32"></div>
                 <div className="hidden  md:flex w-full flex-row justify-around md:flex-col md:w-1/3 md:pl-6">
                     <h3 className="text-black font-semibold pb-5 hidden md:block">Pages</h3>
-                    <p className="text-gray-500 hover:text-gray-700 cursor-pointer">Home</p>
-                    <p className="text-gray-500 hover:text-gray-700 cursor-pointer">Locations</p>
-                    <p className="text-gray-500 hover:text-gray-700 cursor-pointer">Experience</p>
+                    <p className="text-gray-500 hover:text-gray-700 cursor-pointer"><Link href={
+                        "/"
+                    }>Home</Link></p>
+                    <p className="text-gray-500 hover:text-gray-700 cursor-pointer"><Link href={
+                        "#Locations"
+                    }>Locations</Link></p>
+                    <p className="text-gray-500 hover:text-gray-700 cursor-pointer"><Link href={
+                        "#Experiences"
+                    }>Experiences</Link></p>
 
                 </div>
                 <div className="md:border-l md:border-gray-300 md:h-32"></div>

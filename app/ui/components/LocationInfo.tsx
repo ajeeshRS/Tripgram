@@ -41,7 +41,7 @@ export default function LocationInfo() {
                 {
                     locationDetails.map(({ place, imgUrl }, index) => (
                         <div key={index} className="text-center mb-4 w-full ">
-                            <Image className="rounded-full object-cover  w-32 h-32 mx-auto" width={125} height={125} src={imgUrl} alt="location-img" />
+                            <Image className="rounded-full object-cover  w-32 h-32 mx-auto" width={125} height={125} src={imgUrl} alt={place} />
                             <p className={`text-slate-700 font-bold ${oswald.className} pt-2`}>{place}</p>
 
                         </div>
